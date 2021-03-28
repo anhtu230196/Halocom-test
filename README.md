@@ -1,6 +1,4 @@
-# npm install hoặc yarn install để cài package node_modules
 
-### yarn start hoặc npm start để mở browser
 
 # npm install hoặc yarn install để cài package node_modules
 
