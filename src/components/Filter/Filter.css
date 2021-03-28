@@ -1,0 +1,11 @@
+.filter {
+  width: 100%;
+  /* margin: 20px 5px; */
+}
+
+@media (min-width: 800px) {
+  .filter {
+    width: 1000px;
+    margin-left: 10px;
+  }
+}
