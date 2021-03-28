@@ -18,7 +18,9 @@ const loadPostsSuccess = (posts) => ({
 export const loadPostsAction = () => (dispatch) => {
   dispatch(loadPostsStart());
   axios
-    .get("https://jsonplaceholder.typicode.com/posts")
+    .get(
+      "https://react-my-burger-4a0ef-default-rtdb.firebaseio.com/posts/-MWtbN3WynbtGF6lPURC.json"
+    )
     .then((res) => {
       dispatch(loadPostsSuccess(res.data));
     })

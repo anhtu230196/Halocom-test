@@ -14,7 +14,7 @@ function Post({ post: { points, title, id, comments, author, date } }) {
                 <span>{points} points</span>|
                 <span>{author.toUpperCase()}</span>|
                 <span>{moment(date).fromNow()}</span>|
-                <span>{comments.length} comments</span>
+                <span>{comments ? comments.length : 0} comments</span>
             </div>
 
         </div>

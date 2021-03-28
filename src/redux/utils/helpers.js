@@ -1,4 +1,4 @@
-export const sortPosts = (prevListPost, value) => {
+export const sortPosts = (prevListPost, initialPosts, value) => {
   switch (value) {
     case "most":
       return prevListPost.sort((a, b) => b.points - a.points);
@@ -13,7 +13,7 @@ export const sortPosts = (prevListPost, value) => {
         (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf()
       );
     default:
-      return prevListPost;
+      return [...initialPosts];
   }
 };
 

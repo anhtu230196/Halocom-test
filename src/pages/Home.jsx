@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Dimmer, Loader } from 'semantic-ui-react'
@@ -15,7 +14,7 @@ function Home() {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        // dispatch(loadPostsAction())
+        dispatch(loadPostsAction())
         let windowWidth = window.innerWidth
         if (windowWidth < 800) {
             setPostsPerPage(5)

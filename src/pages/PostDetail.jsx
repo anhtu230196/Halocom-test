@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router'
-import { Comment, Container, Icon, Header } from 'semantic-ui-react';
+import { Container, Icon, Header } from 'semantic-ui-react';
 import Comments from '../components/Comments/Comments';
 import HeaderC from '../components/Header/Header'
 
@@ -30,7 +30,7 @@ function PostDetail() {
             <hr />
             <Container>
                 <Header as='h3' dividing >
-                    Comments ({comments.length})
+                    Comments ({comments ? comments.length : 0})
                 </Header>
                 <Comments comments={comments} />
             </Container>

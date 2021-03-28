@@ -10,7 +10,7 @@ function Comments({ comments }) {
     }
 
 
-    if (comments.length === 0) return <p>Have no any comments on this post...</p>
+    if (!comments) return <p>Have no any comments on this post...</p>
     return (
         <div>
             {

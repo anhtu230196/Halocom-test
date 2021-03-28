@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useDispatch } from 'react-redux'
 import { Form } from 'semantic-ui-react'
-import { sortPostsAction, sortPostsByTimeAction } from '../../redux/actions/postsAction'
+import { sortPostsAction } from '../../redux/actions/postsAction'
 import "./Filter.css"
 
 function Filter() {
@@ -10,7 +10,6 @@ function Filter() {
     const dispatch = useDispatch()
 
     const handleChange = (e, data) => {
-        console.log(data.value);
         // setSortByPop(data.value)
         dispatch(sortPostsAction(data.value))
     }
