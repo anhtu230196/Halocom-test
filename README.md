@@ -1,9 +1,5 @@
 
 
-### npm install hoặc yarn install để cài package node_modules
-
-### yarn start hoặc npm start để mở browser
-
 ### Ở trang đăng nhập, đăng nhập bằng tài khoản sau:
 
     email: admin@gmail.com
@@ -15,3 +11,8 @@
 - ReactJs, Redux, Redux-thunk để render giao diện bên client.
 - Framework UI : Semantic UI React.
 - Momentjs.
+
+### Pagination:
+- Tìm vị trí lastOfIndex: currentPage * postPerPage
+- Tìm vị trí firstOfIndex: lastOfIndex - postPerPage
+- Số posts của currentPage: listPost.slice(firstOfIndex, lastOfIndex)
